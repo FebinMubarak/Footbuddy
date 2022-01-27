@@ -39,6 +39,7 @@
 
 }
 
+
 .nav-link:hover{
     background: #dcdde1 !important;
     color: #262626 !important;
@@ -49,7 +50,7 @@
 
 .carousel-caption {
     position: absolute;
-    z-index: 1;
+    z-index: 10;
     display:table;
     width:100%;
     height:100%;
@@ -57,32 +58,71 @@
 
 .absolute-div {
     
-    
+    padding-top: 195px;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
 }
+#header-mnu{
+    height: 160px;
+}
 
+.carousel-caption{
+
+    font-family: "roboto";
+    font-size: 40px;
+   font-weight: 300;
+   height: 100vh;
+   overflow: hidden;
+   display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+   -webkit-backface-visibility: hidden;
+   -webkit-perspective: 1000;
+   -webkit-transform: translate3d(0,0,0);
+
+}
 
 .carousel-caption h2 {
     
     display:table-cell;
     vertical-align: middle;
-    font-family: Arial, Helvetica, sans-serif;
     
-    color: #dcdde1 !important;
-    font-size: 2em;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    margin-inline-start: 0px;
+    font-family: "roboto";
+    color: #f1f4f7 !important;
+    font-weight: 1000;
+    
+
 
     
     
     
     
 }
+.first{
+    animation: showup 7s infinite;
+    width: 0px;
+
+}
+.second{
+    animation:slidein 7s infinite;
+    width: 0;
+    margin-left: -355px;
+    font-family: "roboto";
+
+}
+@keyframes showup{
+    0%{opacity : 0;}
+    20%{opacity : 1;}
+    80%{opacity : 1;}
+    100%{opacity : 0;}
+}
+@keyframes slidein{
+    0%{margin-left:-800px}
+    20%{margin-left:-800px}
+    35%{margin-left: 0px;}
+    100%{margin-left:0px}
 
 
+}
