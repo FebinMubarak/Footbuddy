@@ -8,6 +8,16 @@ var userRouter = require('./routes/user');
 var adminRouter = require('./routes/admin');
 
 var app = express();
+var fileUpload = require("express-fileupload")
+var session = require("express-session")
+
+var db = require("./config/connection")
+
+db.connect(function(err){
+  if (err)
+  console.log("Connection Error"+err)
+  else console.log("Database connected")
+})
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -18,6 +28,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(fileUpload())
+app.use(session({secret:"key",cookie:{maxAge:6000000}}))
 
 app.use('/', userRouter);
 app.use('/admin', adminRouter);

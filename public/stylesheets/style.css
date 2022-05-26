@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:ital,wght@1,300&display=swap');
 *{
     margin: 0;
     padding: 0;
-    font-family: "AvenirNext","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Roboto', sans-serif;
 
 }
 
@@ -56,22 +57,15 @@
     height:100%;
 }
 
-.absolute-div {
-    
-    padding-top: 195px;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-}
 #header-mnu{
     height: 160px;
 }
 
 .carousel-caption{
-
-    font-family: "roboto";
-    font-size: 40px;
+    
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
    font-weight: 300;
    height: 100vh;
    overflow: hidden;
@@ -89,20 +83,21 @@
     display:table-cell;
     vertical-align: middle;
     
-    font-family: "roboto";
-    color: #f1f4f7 !important;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Roboto', sans-serif;
+    color: #F0F8FF !important;
     font-weight: 1000;
-    
-
-
-    
+    align-content: flex-end;
+    font-size: 24px;
     
     
-    
+  
 }
 .first{
     animation: showup 7s infinite;
     width: 0px;
+    padding-top: 400px;
+    
 
 }
 .second{
@@ -126,3 +121,73 @@
 
 
 }
+
+
+.login{
+    font-family: 'Times New Roman', Times, serif;
+    
+
+
+}
+.content{
+    margin: 8%;
+    background-color: rgb(55, 61, 61);
+    padding: 4rem 1rem 4rem 1rem;
+    box-shadow: 0 0 5px 5px rgb(78, 75, 75) ;
+}
+.signin-text{
+    font-style: normal;
+    font-weight: 700 !important;
+    margin-left: 180px;
+    font-size: 35px;
+    color: white;
+
+
+}
+.label{
+    color: #ccc;
+}
+.form-check-label{
+    color: #ccc;
+}
+.form-control{
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border-color: rgb(209, 221, 221) !important;
+    border-style: solid !important;
+    border-width: 0 0 1px 0 !important;
+    padding: 0px !important;
+    color: rgb(228, 216, 216);
+    height: auto;
+    border-radius: 0px;
+    background-color: #9c9595;
+    background-clip: border-box;
+
+
+
+}
+.form-control:focus{
+    color: rgb(68, 63, 56);
+    background-color: rgb(187, 175, 175);
+    border-color: rgb(44, 13, 13);
+    outline: 0px;
+    box-shadow: none;
+}
+.btn-dark{
+    background-color: white;
+    color: black;
+
+
+}
+.btn-dark:hover{
+    color: white;
+    background-color: black;
+}
+.btn-dark:hover{
+      color: black;
+      background-color: white;
+}
+

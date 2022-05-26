@@ -1,0 +1,40 @@
+
+    <section style="background-image: url(images/home/bg.jpg);" >
+        <div class="container">
+        <div class="row">
+            {{#each players}} 
+
+            <div  class="col-12 col-md-3 col-lg-3 pt-5 mt-1  ">
+                <div  class="card" style="width: 15rem; height: 25rem; background-image: url(images/home/wp2.jpg); ">
+                    
+                    <h5 style="font-family: fangsong;
+                    font-style: italic;" class="card-title">{{this.username}}</h5>
+                    <p style="font-family: fangsong;
+                    font-style: italic;">Contact number {{this.number}}</p>
+                    
+  <img src="images/{{this._id}}.jpg" class="card-img-top" style="height: 15rem; p-3" alt="">
+  <div class="card-body">
+      <p style="font-family: fangsong;
+                    font-style: italic;" class="card-text"> {{this.Description}}</p>
+    <p style="font-family: fangsong;
+                    font-style: italic;" class="card-text">Team {{this.team}}</p>
+                    
+    
+    
+    
+  </div>
+</div>
+            </div>
+            {{/each}}
+            
+            </div>
+
+        </div>
+        
+        
+    </section>
+
+    
+
+    
+    
